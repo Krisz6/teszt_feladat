@@ -66,4 +66,13 @@ public class Main {
         }
         return sum;
     }
+    public static int sumEvenNumbers(int[] array) {
+        int sum = 0;
+        for (int actual : array){
+            if (actual % 2 == 0){
+                sum += actual;
+            }
+        }
+        return sum;
+    }
 }
