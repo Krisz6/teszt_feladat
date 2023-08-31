@@ -16,6 +16,7 @@ public class Main {
         System.out.println();
         System.out.println(findMaximum(array));
         System.out.println(countUnevenNumbers(array));
+        System.out.println(sumEvenNumbers(array));
     }
 
     public static int findMaximum(int[] array) {
@@ -53,5 +54,14 @@ public class Main {
             }
         }
         return count;
+    }
+    public static int sumEvenNumbers(int[] array) {
+        int sum = 0;
+        for (int actual : array){
+            if (actual % 2 == 0){
+                sum += actual;
+            }
+        }
+        return sum;
     }
 }
