@@ -15,6 +15,7 @@ public class Main {
         }
         System.out.println();
         System.out.println(findMaximum(array));
+        System.out.println(countUnevenNumbers(array));
     }
 
     public static int findMaximum(int[] array) {
@@ -25,6 +26,15 @@ public class Main {
             }
         }
         return maximum;
+    }
+    public static int countUnevenNumbers(int[] array) {
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] % 2 != 0) {
+                counter++;
+            }
+        }
+        return counter;
     }
     public static int findMin(int[] array){
         int min = array[0];
