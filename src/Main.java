@@ -13,6 +13,18 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
+        System.out.println();
+        System.out.println(findMaximum(array));
+    }
+
+    public static int findMaximum(int[] array) {
+        int maximum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i] > maximum) {
+                maximum = array[i];
+            }
+        }
+        return maximum;
     }
     public static int findMin(int[] array){
         int min = array[0];
